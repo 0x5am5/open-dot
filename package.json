@@ -10,7 +10,8 @@
     "desktop:dev": "OPEN_DOT_DEV_URL=http://localhost:3100 electron electron",
     "desktop:prepare": "next build && node scripts/desktop-prepare.mjs",
     "desktop": "electron electron",
-    "desktop:build": "pnpm desktop:prepare && electron-builder --mac"
+    "desktop:build": "pnpm desktop:prepare && electron-builder --mac",
+    "test:e2e": "playwright test"
   },
   "dependencies": {
     "@composio/core": "0.22.0",
@@ -32,6 +33,7 @@
     "zod": "^4.6.5"
   },
   "devDependencies": {
+    "@playwright/test": "^1.63.0",
     "@tailwindcss/postcss": "^4",
     "@tailwindcss/typography": "^0.5.20",
     "@types/node": "^26.6.3",
