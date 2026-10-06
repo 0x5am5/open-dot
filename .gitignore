@@ -51,8 +51,3 @@ next-env.d.ts
 /.desktop
 /videos
 .gstack/
-
-# e2e
-/.e2e-data
-/test-results
-/playwright-report
